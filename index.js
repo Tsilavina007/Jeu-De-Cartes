@@ -15,8 +15,6 @@ for (let i = 0; i < 3; i++) {
     let ordiCarte = ordiCarteRandom() 
     cartes.vs(carte(userCarte), carte(ordiCarte)).forEach((elm) => {console.log(elm);}) // afficher l'interface (user vs ordi)
 
-
-    // asio miantso function mverifier oe iza n mandresy eto, zany oe mcreer function vaovao miverifier oe iza n mandresy mihintsy, de affichena ny resultat
 }
 
 
@@ -36,3 +34,18 @@ function ordiCarteRandom() {
     let cartes = ['E','F','P']
     return cartes[Math.floor(Math.random() * cartes.length)]
 }
+
+function verifierResultat(userCarte, carteRobot) {
+    if (userCarte === carteRobot) {
+        return 'Égalité !';
+    } else if (
+        (userCarte === 'E' && carteRobot === 'P') ||
+        (userCarte === 'F' && carteRobot === 'E') ||
+        (userCarte === 'P' && carteRobot === 'F')
+    ) {
+        return 'Vous avez gagné !';
+    } else {
+        return 'Vous avez perdu !';
+    }
+}
+verifierResultat();
