@@ -11,14 +11,16 @@ function menu(userPseudo) {
         bienvenu+=' '
     }
 
-    console.log(`\n${bienvenu+userPseudo+', bienvenu sur le Jeu de Cartes'}
-                           _________________
-                          |                 |
-                          |   1 - Jouer     |
-                          |   2 - Guides    |
-                          |   3 - Quitter   |
-                          |_________________|\n`);
+    console.log(`\n${bienvenu+userPseudo+', bienvenu sur le Jeu de Cartes'}\n
+Pendant 3 manches, vous devrons affronter un robot dans une bataille de cartes.
+
+    ==============================================================
+    `);
 
 }
 
+
+function guide() {
+    console.log(``);
+}
 exports.menu = menu
