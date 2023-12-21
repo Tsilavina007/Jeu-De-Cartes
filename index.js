@@ -15,6 +15,8 @@ for (let i = 0; i < 3; i++) {
     let ordiCarte = ordiCarteRandom() 
     cartes.vs(carte(userCarte), carte(ordiCarte)).forEach((elm) => {console.log(elm);}) // afficher l'interface (user vs ordi)
 
+    console.log(verifierResultat(userCarte,ordiCarte)); // De eto tyh ny atsona
+
 }
 
 
@@ -39,13 +41,12 @@ function verifierResultat(userCarte, carteRobot) {
     if (userCarte === carteRobot) {
         return 'Égalité !';
     } else if (
-        (userCarte === 'E' && carteRobot === 'P') ||
-        (userCarte === 'F' && carteRobot === 'E') ||
-        (userCarte === 'P' && carteRobot === 'F')
+        (userCarte === 'E' && carteRobot === 'F') ||
+        (userCarte === 'F' && carteRobot === 'P') || // le condition teto ny nambariko kely (E>F, F>P, P>E)
+        (userCarte === 'P' && carteRobot === 'E')
     ) {
         return 'Vous avez gagné !';
     } else {
-        return 'Vous avez perdu !';
+        return 'Le robot a gagné !';
     }
 }
-verifierResultat();
