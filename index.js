@@ -12,8 +12,8 @@ accueil.menu(userPseudo)
 for (let i = 0; i < 3; i++) {
     console.log(`Manche ${i+1}`);
     let userCarte = prompt('Choisissez une carte (E,F,P): ')
-    console.log(`${userCarte} vs ${ordiCarteRandom()}`);
-    
+    console.log(`${userCarte} vs ${ordiCarteRandom()}`); 
+
     // asio miantso function mverifier oe iza n mandresy eto, zany oe mcreer function vaovao miverifier oe iza n mandresy mihintsy, de affichena ny resultat
 }
 
