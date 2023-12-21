@@ -80,4 +80,4 @@ function carteVersus(carteUser, carteOrdi) {
     return vs
 }
 
-lesCartes().forEach((element) => {console.log(element);})
+exports.lesCartes = lesCartes
