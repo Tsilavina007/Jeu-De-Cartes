@@ -69,15 +69,22 @@ function lesCartes() {
     }
     cartes.unshift('    **************************************************************')
     cartes.push('','    **************************************************************')
+
     return cartes
 }
 
 
 function carteVersus(carteUser, carteOrdi) {
-    let vs = ['',`  |Votre Carte|                         |La carte de l'ordi|`]
-    for (let i = 0; i < carteUser.length; i++) {vs.push(carteUser[i] + '                       '+carteOrdi[i])}
+    let vsList = ['',`        |Votre Carte|                         |La carte de l'ordi|`]
+    for (let i = 0; i < carteUser.length; i++) {vsList.push('      '+carteUser[i] + '                       '+carteOrdi[i])}
 
-    return vs
+    return vsList
 }
 
 exports.lesCartes = lesCartes
+exports.vs = carteVersus
+
+exports.eau = carteEau
+exports.feu = carteFeu
+exports.plante = cartePlante
+
