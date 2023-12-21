@@ -39,14 +39,14 @@ function ordiCarteRandom() {
 
 function verifierResultat(userCarte, carteRobot) {
     if (userCarte === carteRobot) {
-        return 'Égalité !';
+        return '                              Égalité !';
     } else if (
         (userCarte === 'E' && carteRobot === 'F') ||
         (userCarte === 'F' && carteRobot === 'P') || // le condition teto ny nambariko kely (E>F, F>P, P>E)
         (userCarte === 'P' && carteRobot === 'E')
-    ) {
-        return 'Vous avez gagné !';
+    ) { 
+        return '                           Vous avez gagné !';
     } else {
-        return 'Le robot a gagné !';
+        return '                           Le robot a gagné !';
     }
 }
