@@ -48,4 +48,4 @@ function verifierResultat(userCarte, carteRobot) {
         return 'Vous avez perdu !';
     }
 }
-verifierResultat();
+verifierResultat();//Iza le atsoina eto <= 
