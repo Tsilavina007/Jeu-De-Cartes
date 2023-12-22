@@ -10,10 +10,17 @@ const userPseudo = prompt('Entrer votre pseudo : ')
 accueil.menu(userPseudo)  // afficher le menu (fonction importee dans le dossier interface)
 
 for (let i = 0; i < 3; i++) {
-    console.log(`\n\n        =============>         Manche ${i+1}         <=============\n`);
+    console.log(`
+    \n*************************************************************************
+    \n        =============>         Manche ${i+1}         <=============\n`);
     let userCarte = prompt('Choisissez une carte (E,F,P): ')
+    while (userCarte!='E' && userCarte!='F' && userCarte!='P') {
+        userCarte = prompt(`La carte doit etre 'E' ou 'F' ou 'P': `)
+    }
     let ordiCarte = ordiCarteRandom() 
     cartes.vs(carte(userCarte), carte(ordiCarte)).forEach((elm) => {console.log(elm);}) // afficher l'interface (user vs ordi)
+
+    console.log(verifierResultat(userCarte,ordiCarte)); // De eto tyh ny atsona
 
 }
 
@@ -37,15 +44,14 @@ function ordiCarteRandom() {
 
 function verifierResultat(userCarte, carteRobot) {
     if (userCarte === carteRobot) {
-        return 'Égalité !';
+        return '                              Égalité !';
     } else if (
         (userCarte === 'E' && carteRobot === 'P') ||
         (userCarte === 'F' && carteRobot === 'E') ||
         (userCarte === 'P' && carteRobot === 'F')
     ) {
         return 'Vous avez gagné !';
-    }else {
+    } else {
         return 'Vous avez perdu !';
     }
 }
-verifierResultat();
