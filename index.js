@@ -42,7 +42,7 @@ function ordiCarteRandom() {
     return cartes[Math.floor(Math.random() * cartes.length)]
 }
 
-function verifierResultat(userCarte, carteRobot) {
+function verifierResultat (userCarte, carteRobot) {
     if (userCarte === carteRobot) {
         return '                              Égalité !';
     } else if (
