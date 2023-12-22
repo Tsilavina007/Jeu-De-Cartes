@@ -44,8 +44,8 @@ function verifierResultat(userCarte, carteRobot) {
         (userCarte === 'P' && carteRobot === 'F')
     ) {
         return 'Vous avez gagné !';
-    } else {
+    }else {
         return 'Vous avez perdu !';
     }
 }
-verifierResultat();//Iza le atsoina eto <= 
+verifierResultat();
