@@ -91,17 +91,17 @@ function afficherResultatFinal() {
     if (resultats.filter((elm) => elm == 'U').length>1 || (resultats.filter((elm) => elm == 'U').length==1 && resultats.filter((elm) => elm == 'E').length>1)) {
         console.log(`
 |======================================================================|
-|          Félicitation! vous avez gagné les trois manches !           |
+|                  Félicitation! vous avez gagné  !                    |
 |======================================================================|`);        
     } else if (resultats.filter((elm) => elm == 'R').length>1 || (resultats.filter((elm) => elm == 'R').length==1 && resultats.filter((elm) => elm == 'E').length>1)) {
         console.log(`
 |======================================================================|
-|           Dommage! le robot a gagné les trois manches !              |
+|                  Dommage! le robot a gagné !                         |
 |======================================================================|`);
     } else {
         console.log(`
 |======================================================================|
-|             Weshh! Égalité, vous êtes insaisissable.                 |
+|               Weshh! Égalité, vous êtes insaisissable.               |
 |======================================================================|
 `);
         if (prompt(`Vous voulez retenter votre chance à nouveau (o/n) ? ==> `).toLowerCase() == 'o') {
@@ -109,9 +109,9 @@ function afficherResultatFinal() {
         } else {
             console.log(`
 |======================================================================|
-|                            Merci beaucoup!                           |
+|                           Merci beaucoup!                            |
 |======================================================================|
 `);
         };
     };
-};
+};;
