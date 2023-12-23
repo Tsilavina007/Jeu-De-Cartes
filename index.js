@@ -2,7 +2,7 @@ const prompt = require('prompt-sync')();
 
 const cartes = require('./interface/cartes');
 const accueil = require('./interface/accueil')
-
+ 
 
 const userPseudo = prompt('Entrer votre pseudo : ')
 var resultats = []
