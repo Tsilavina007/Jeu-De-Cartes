@@ -91,12 +91,12 @@ function afficherResultatFinal() {
     if (resultats.filter((elm) => elm == 'U').length>1 || (resultats.filter((elm) => elm == 'U').length==1 && resultats.filter((elm) => elm == 'E').length>1)) {
         console.log(`
 |======================================================================|
-|                  Félicitation! vous avez gagné  !                    |
+|             Félicitation! vous avez gagné de cet partie !            |
 |======================================================================|`);        
     } else if (resultats.filter((elm) => elm == 'R').length>1 || (resultats.filter((elm) => elm == 'R').length==1 && resultats.filter((elm) => elm == 'E').length>1)) {
         console.log(`
 |======================================================================|
-|                  Dommage! le robot a gagné !                         |
+|               Dommage! le robot a gagné de cet partie!                |
 |======================================================================|`);
     } else {
         console.log(`
