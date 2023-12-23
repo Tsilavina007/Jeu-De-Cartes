@@ -75,7 +75,7 @@ function lesCartes() {
 
 
 function carteVersus(carteUser, carteOrdi) {
-    let vsList = ['',`        |Votre Carte|                         |La carte de l'ordi|`]
+    let vsList = ['',`        |Votre Carte|                            |Carte robot|`]
     for (let i = 0; i < carteUser.length; i++) {vsList.push('      '+carteUser[i] + '                       '+carteOrdi[i])}
 
     return vsList
