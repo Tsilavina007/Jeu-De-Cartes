@@ -54,4 +54,4 @@ function verifierResultat (userCarte, carteRobot) {
     } else {
         return 'Vous avez perdu !';
     }
-}
+};
