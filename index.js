@@ -50,8 +50,8 @@ function verifierResultat (userCarte, carteRobot) {
         (userCarte === 'F' && carteRobot === 'E') ||
         (userCarte === 'P' && carteRobot === 'F')
     ) {
-        return 'Vous avez gagné !';
+        return '                              Vous avez gagné !';
     } else {
-        return 'Vous avez perdu !';
+        return '                              Vous avez perdu !';
     }
 }
