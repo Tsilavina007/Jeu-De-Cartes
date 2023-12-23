@@ -1,5 +1,7 @@
 # Jeu-De-Cartes
 
+![Capture](capture.jpg)
+![Capture](capture2.jpg)
 Bienvenue dans notre jeu de cartes jouable sur la console de votre terminal. Suivez les instructions ci-dessous pour profiter de l'expérience de jeu.
 
 
