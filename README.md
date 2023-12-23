@@ -67,7 +67,7 @@ Si le résultat final est une égalité, vous aurez la possibilité de retenter 
 
 
 ## Auteurs
-- [Tsilavina](https://github.com/votre-utilisateur)
+- [Tsilavina](https://github.com/Tsilavina007)
 - [Ranto](https://github.com/Ranto-creat)
 
 
